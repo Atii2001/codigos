@@ -1,0 +1,34 @@
+<!--COMANDOS BASICOS PARA CONFIGURAR USUARIO Y EMAIL DE GITHUB-->   
+git config --global(*) user.name "nombre de usuario de github"
+<!--CONFIGURAR NOMBRE QUE SALE EN LOS COMMITS-->
+git config --global(*) user.name "email de cuenta de github"
+<!--CONFIGURAR EMAIL-->
+git config --global(*) color.ui true
+<!--MARCO DE COLORES PARA LOS COMANDOS-->
+    
+(*) --global: abarca en general esa configuracion para todo el sistema
+
+
+<!--COMANDOS PARA INICIAR REPOSITORIO DENTRO DEL PROYECTO-->
+git init
+<!--INICIAMOS GIT EN LA CARPETA DONDE ESTA EL PROYECTO-->
+git add "archivos"
+<!--AÑADIMOS TODOS LOS ARCHIVOS PARA EL COMMIT-->
+git commit -m "texto que identifique por que se hizo el commit"
+<!--HACEMOS EL PRIMER COMMIT-->
+
+
+<!--COMANDOS PARA "PUSHEAR" LOS ARCHIVOS AL REPOSITORIO-->
+git remove add origin "link del repositorio"
+<!--COMANDO PARA VINCULAR REPOSITORIO DE NUESTRA COMPUTADORA CON EL REPOSITORIO DE GITHUB-->
+git branch -m main
+<!--DEFINE LA RAMA QUE PENSAMOS SUBIR O MODIFICAR COMO "MAIN"-->
+git push -u origin main
+<!--COMANDO CONCRETO QUE ESTABLECE EL PUSH DE LOS ARCHIVOS DEL USUARIO (-u), AL REPOSITORIO "origin", DESDE LA RAMA "main"-->
+
+
+
+
+
+git clone <url>
+    <!--CLONAMOS EL REPOSITORIO DE GITHUB-->
