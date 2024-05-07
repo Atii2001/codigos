@@ -1,0 +1,220 @@
+<!--DOCUMENTO FUERA DE LINEA-->
+<!DOCTYPE> -- version de html 
+html -- version del documento
+lang= -- lenguaje
+<head></head> -- informacion de la página
+<body></body> -- contenido de la pagina
+<!--INFORMACION DE LA PAGINA-->
+<base> -- URL 
+<meta> -- Metadata
+<title></title> -- titulo
+<link> -- Recursos relevantes 
+<link rel="icon" href="enlace del archivo"> icono de la pagina del title (la imagen del icono tiene que terminar en .ico)
+<!--ETIQUERAS ESTRUCTURALES O SEMANTICAS-->
+<nav></nav> -- contener los enlaces de navegacion (los links)
+<header></header> -- contener el encabezado de una pagina (suele contener info de la empresa)
+                      (aca van los navegadores dentro de la web)
+<article></article> -- encapsular contenido autonomo, como una noticia o una entrada en un blog
+                        (SE USA PARA ARTICULOS, ADENTRO ESTA DIVIDIDO EN SECCIONES (SECTION))
+<section></section> -- contener contenido relacionado tematicamente. dividir una pag en secciones logicas y separar
+                    contenido en diferentes bloques tematicos (puede contener titulos,parrafos,tablas,imagenes,listas,etc)
+<aside></aside> -- encapsular contenido lateral, incluir info relacionada con el contenido principal pero que
+                   no es escencial para su comprension. 
+                   (ES LO QUE VA AL COSTADO DE LA PAGINA)
+<footer></footer> -- contener el pie de pagina de una pagina (suele contener info como nombre de empresa y contactos)
+<!--ESTRUCTURA DE DOCUMENTO-->
+<h1></h1> -- titulo de cabezera (se puede hasta el h6)
+<div></div> -- sirve para agrupar elementos en bloque
+<span></span> -- sirve para agrupar elementos dentro de una linea
+<p></p> -- parrafo
+<br> -- salto de linea 
+<hr> -- salto de espacio (lo mismo que br pero sin la linea)
+<!--LINKS / ENLACES-->
+<a href="el link"></a> -- enlace de una pagina
+<a href="mailto: el mail"></a> enlace de un mail
+<a href="tel: el telefono"></a> -- enlace de telefono
+<a name="name"></a> -- 
+<a href="#name"></a> --
+<!--IMAGENES E IMAGENES DE MAPA-->
+<img src=""> -- imagen
+<map src=""></map> -- imagen de mapa
+<area src=""> -- imagen de area del mapa
+<!--LISTA-->
+<ol></ol> -- lista ordenada (le pone numeros)
+<ul></ul> -- lista desordenada (le pone puntos)
+<li></li> -- item de la lista (va adentro del ol o ul)
+<dl></dl> -- definicion de lista
+<dt></dt> -- definicion de termino (va adentro de dl)
+<dd></dd> -- descripcion del termino (va adentro de dl)
+<!--FORMULARIO-->
+<form></form> -- se utiliza esta etiqueta para crear un formulario en una pagina  
+<input type="el tipo" placeholder="el nombre que aparece en la barra"> -- puede ser: text(texto), password(contraseña),
+                 radio, checkbox(cuadrado de checkeado), button(botón), 
+                color(seleccionar color), email(poner emal), file,(documento), hidden(nose que es), image(imagen),
+                number(numeros)                
+<label></label> -- se utiliza para describir los elementos de un formulario
+<fieldset></fieldset> -- cuadro que agrupa opciones (generalmente se usa para los input)
+<legend></legend> -- es como un "titulo"
+<select></select> -- crear menu desplegable. elegir una opcion de varias opciones (adentro de esta va la etiqueta option)
+<optgroup></optgroup> -- grupo de opciones
+<option value=""></option> -- elegir opcion (sale para abajo)
+<button></button> -- un boton
+<textarea></textarea> cuadro de texto
+<!--TABLAS-->
+<table></table> -- tabla
+<caption></caption> -- subtitulo
+<thead></thead> -- cabeza de la tabla
+<tbody></tbody> -- cuerpo de la tabla
+<tfoot></tfoot> -- pie de la tabla
+<colgroup></colgroup> -- grupo de la columna
+<col> -- columna 
+<tr></tr> -- fila de la tabla
+<th></th> -- celda de encabezado (va adentro de tr)
+<td></td> -- celda de la tabla (va adentro de tr)
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+<!-- ASI CORRESPONDE QUE VAYA ADENTRO UNO DE OTRO (SIEMPRE DENTRO DEL BODY)-->
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="nombre de la otra pag">loquesea</a></li>  <!--ACA IRIA LA BARRA DE NAVEGACION (generalmente se hacen los enlaces con ul)-->
+                                                                   <!--(SERIA COMO EL MENU DE INTERACCION CON LA PAG (buscador,iniciar sesion,etc))-->
+        </ul>                                                      <!--LA BARRA DE NAVEGACION (EL HEADER) IENE QUE SER IGUAL EN TODAS LAS PAGINAS--> 
+    </nav>
+</header>
+
+<article>
+    <section>
+        <h1>poner titulo</h1>                    <!--PUEDEN IR ADENTRO DIVS CON INFO ADENTRO,-->
+        <h2>poner subtitulo</h2>                <!--YA SEA VIDEOS,H,P,IAMEGENES (generalmente son notas con esos cosos)-->
+        <p>poner el contenido</p>
+    </section>
+</article>
+
+<aside>
+
+    <h1></h1>           <!--PUEDE IR INFO ADENTRO, YA SEA VIDEOS, IMAGENES,P,H,LISTAS-->
+    <p></p>             <!--ES CONTENIDO RELACIONADO A LO PRINCIPAL-->
+
+</aside>
+
+<footer>
+    <h3>algun titulo</h3>  <!--(no es obligatorio poner el h3)ALGUNOS PONEN: todos los derechos reservados (o algo asi)-->
+    <h4>titulo para la lista</h4>  <!--generalmente se pone "contactanos" o "nuestras redes", etc-->
+    <ul>
+        <li>
+            <a href=""></a>      <!--ACA VA GENERALMENTE LA INFO DE CONTACTO DE LA EMPRESA (links de contactos (tel,email,ig))-->
+        </li>                     
+    </ul>
+</footer>
+
+
+<!--LAS LISTAS-->
+
+<!--SE PUEDE PONER UN H PARA EL TITULO DE LA LISTA (va por fuera dek ul o ol)-->
+<h1></h1> o <h2></h2>
+
+<ul> <!--SON CON UN PUNTITO (DESORDENADO)-->
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<ol> <!--SON CON NUMERACION (ORDENADO)-->
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+------------------------------------------------------------------------------------------------------------------------
+
+<!--MULTIMEDIA--> (SE RECOMIENDA QUE LOS VIDEOS, IMAGENES O AUDIOS ESTEN DESCARGADOS EN UNA CARPETA NO DE INTERNET)
+
+<img src="LINK DE LA IMAGEN" alt="DESCRIPCION DE LA IMAGEN" title="TITULO QUE APARECE CUANDO SE LE PASA CON EL MOUSE">
+<img src="imagen.png" alt=""> (si esta dentro de la misma carpeta se pone asi) (la imagen siempre va a terminar: .png)
+<img src="imagenes/imagen.png" alt=""> (si esta dentro de otra carpeta se pone asi) 
+<video src="nombredelvideo.elformato" controls> </video>></video> si el video esta descargado en la carpeta
+                                            (el formato del video puede ser .ogg / .mov / .avi / .wmv / ,mp4)
+                                            (el controls sirve para poner los controles predeterminados (play,volumen,etc))
+<audio src="nombredelaudio.ogg" controls></audio>
+-------------------------------------------------------------------------------------------------------------------------
+
+<!--FORMULARIOS-->
+
+<form>
+    <input type="text">
+    <input type="password">
+    <input type="number">
+    <input type="email">
+    <input type="color">
+    <input type="radio">
+    <input type="range" min="poner el minimo (por ej 1)" max="poner el maximo (por ejemplo 5)">
+    <input type="date">
+    <input type="time">
+    <textarea></textarea> crea un cuadro de texto para escribir
+    <input type="button" value="nombre que lleva adentro el boton">
+    <input type="submit">
+
+    <input type="text" required=""> el required se pone para poner que el campo es obligatorio
+    <input type="text" placeholder="lo que quiero que diga"> se pone de fondo en el recuadro modo referencia
+
+</form>
+
+------------------------------------------------------------------------------------------------------------------------
+<!--METADATOS-->
+
+<meta charset="UTF-8"> se usa para los signos y simbolos (por ejemplo acentos)
+<meta name="keywords" content="las palabras claves"> palabras claves para la busqueda
+<meta name="description" content="describir la pagina"> tiene un numero maximo de 160 caracteres
+<meta name="author" content="nombre del autor de la pagina">
+<meta name="copyright" content="nombre de la empresa registrada dueña de los derechos"> en caso de que la empresa este 
+                                                                                        registrada y tenga copyright
+<meta name="robots" content="index o noindex"> indica si nuestra pogina es indexada o no indexada
+                                              (indexada es que cuando buscas por el navegador
+                                            aparezca en la lista de busqueda, si es no indexada no aparece en la busqueda)
+--------------------------------------------------------------------------------------------------------------------------
+
+<!--TABLAS--> (AVERIGUAR DONDE VA EL THEAD, TBODY Y TFOOT)
+
+<table>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+por ejemplo
+
+<table>
+    <tr>
+        <td>nombre</td>
+        <td>apellido</td>
+        <td>edad</td>
+    </tr>
+    <tr>
+        <td>matias</td>
+        <td>boris</td>
+        <td>23</td>
+    </tr>
+</table>
+
+--------------------------------------------------------------------------------------------------------------------------
+
+<!--MANDAR EL ARCHIVO AL REPOSITORIO DE GIT-PUSH-->
+entrar a la terminal del VSC (view-terminal)
+poner los siguientes comandos y apretar enter dsp de cada uno
+git init
+git add .
+git commit -m "nombre que quiero q tenga"
+y copiar y pegar los ultimos dos link que aparece en "…or create a new repository on the command line":
+-(git remote add origin ellinkdelgithub)
+- (git push -u origin main)
+-git add README.md (se usa para poner una descripcion)
+<!--MANDAR UN REPOSITORIO DE GIT-PUSH A VERCEL-->
+En el inicio (el triangulo negro en la esquina sup iz)
+poner add new project (esquina sup derecha)
+importar el archivo de git-push
+poner el nombre del proyecto y apretar deploy
+
+-------------------------------------------------------------------------------------------------------------------------
