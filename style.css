@@ -1,0 +1,101 @@
+/* SE ARMA ASI */
+tipo de selector {
+    propiedad (por ej color): valor (por ej rojo)
+}
+
+/* ESPECIFICIDAD */
+-!important
+-estilos en linea
+-id (identificadores)
+-clases
+-pseudo-clases
+-atributos
+-elementos
+-pseudo-elementos
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* ELECTORES */
+-selector universal:selecciona todo el html --- * (asterisco){}
+-selector por tipo: se selecciona por elemento (por ejemplo button,h1,p,etc) --- h1{}
+-selector por clases: se agrupan los elementos en clases (poner class= "el nombre de la clase"al lado del elemento)-- . (punto) nombre de la clase{}
+-selector por id: lo mismo que la clase pero se le pone un id UNICO (no repetir)--- # (numeral)nombre del id{}
+-selector por atributo: al atributo del elemento (puede ser cualquier atributo por ej: soyunatributo="soyatributo") -- [oyunatributo="soyatributo"]{} 
+-selector por descendencia: seleccionar solo los elementos adentro de otro por ej <h2><p></p></h2> --- h2 p {} (selecciona a los p que estan dentro del h2)
+-selector por pseudoclase: ????
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* FLEX-BOX */
+display: flex -- contenedor que envuelve a los elementos hijos (va si o si para aplicar flexbox) y tiene distintas propidedades
+
+/* FLEX-DIRECTION */
+se usa para establecer la direccion de los elementos
+
+- row :los elementos hijos se colocarán en una fila de izquierda a derecha.
+- row-reverse: los elementos hijos se colocarán en una fila de derecha a izquierda
+- column : los elementos hijos se colocaran en columna, de arriba hacia abajo
+- column-reverse: los elementos hijos se colocaran en columna, de abajo hacia arriba
+
+/* FLEX-WRAP */
+se utiliza para establecer si loselementos hijos dentro de un contenedor en Flexbox deben volcarse a una nueva línea si
+no caben en el espacio disponible o si deben reducir su tamaño para ajustarse al contenedor.
+
+-nowrap: Los elementos hijos se ajustarán automáticamente para intentar que todos ellos
+encajen en una sola línea. Si no hay suficiente espacio en la línea, se reducirán de
+tamaño para ajustarse
+-wrap: Los elementos hijos se distribuirán en líneas, si es necesario, respetando la dirección
+establecida con la propiedad "flex-direction". Si alguno de los elementos no cabe en la línea,se volcará a una nueva línea.
+-wrap-reverse: Los elementos hijos se distribuirán en líneas en la dirección opuesta a la establecidaon "flex-direction".
+Si algunos de los elementos no caben en la línea, se envolverán a unanueva línea en la dirección opuesta.
+
+/* FLEX-FLOW */
+Combina las propiedades flex-direction y flex-wrap. Siendo el primer valor la dirección y el segundo el wrap.
+(por ej flex-flow: column wrap)
+
+/* JUSTIFY-CONTENT */
+Se utiliza para alinear los elementos hijos dentro del contenedor en el eje principal
+(ya sea horizontal (row)o vertical (column), dependiendo de la dirección establecida por "flex-direction")
+
+-flex-start: Este valor alinea los elementos hijos al inicio del contenedor en el eje principal
+-flex-end: Este valor alinea los elementos hijos al final del eje principal del contenedor
+-center: Este valor alinea los elementos hijos en el centro del eje principal del contenedor
+-space-between: Este valor distribuye los elementos hijos con espacios equitativos entre ellos
+-space-around: Este valor distribuye los elementos hijos con espacios equitativos entre ellos pero con un espacio
+entre el primer y ultimo elemento con respecto al extremo del eje principal (el borde de la caja)
+-space-evenly: Es lo mismo que el space-around, pero la diferencia radica en que será idéntico el espacio entre el
+primer y último elemento con los extremos del eje principal y el espacio entre elementos.}
+
+/* ALIGN-ITEMS */
+Se utiliza para alinear los elementos hijos a lo largo del eje transversal del contenedor.
+
+-flex-start: Este valor alinea los elementos hijos al inicio del contenedor en el eje transversal del contenedor.
+-flex-end: Este valor alinea los elementos hijos al final del eje transversal del contenedor.
+-center: Este valor alinea los elementos hijos en el centro del eje transversal del contenedor.
+-stretch: Este valor es el valor por defecto de "align-items" y estira los elementos hijos para que se
+ajusten al alto del contenedor a lo largo del eje transversal.
+-baseline: Este valor alinea los elementos hijos en su línea base común, es decir, en la línea
+imaginaria donde descansan las letras en un texto.
+
+/* ALIGN-CONTENT */
+Este valor alinea los elementos hijos en su línea base común, es decir, en la línea imaginaria
+donde descansan las letras en un texto. Esta propiedad se aplica solo cuando hay varias
+líneas de elementos en un contenedor Flexbox, es decir,
+cuando la propiedad "flex-wrap" está establecida en "wrap" o "wrap-reverse"
+
+-flex-start: Alinea las líneas de elementos al comienzo del eje transversal del contenedor.
+-flex-end: Alinea las líneas de elementos al final del eje transversal del contenedor.
+"center": Alinea las líneas de elementos en el centro del eje transversal del contenedor.
+-space-between: Distribuye uniformemente el espacio adicional entre las líneas de
+elementos, dejando un espacio en blanco en los bordes superior e inferior del contenedor.
+-space-around: Distribuye uniformemente el espacio adicional alrededor de las líneas de
+elementos, incluyendo los bordes superior e inferior del contenedor.
+-stretch: Estira las líneas de elementos para llenar todo el espacio disponible en el eje
+transversal del contenedor.
+-space-evenly: Distribuye uniformemente el espacio disponible tanto entre las líneas de
+elementos como alrededor de los bordes superior e inferior del contenedor en el eje transversal.
+
+/*GAP*/
+La propiedad "gap" es una propiedad de Flexbox que define el espacio entre los elementos de un contenedor
+Para determinar el valor de esta propiedad, podemos aplicar las distintas unidades de
+medida que vimos anteriormente (generalmente se usa "px" para el gap)
+
