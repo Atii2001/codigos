@@ -99,3 +99,25 @@ La propiedad "gap" es una propiedad de Flexbox que define el espacio entre los e
 Para determinar el valor de esta propiedad, podemos aplicar las distintas unidades de
 medida que vimos anteriormente (generalmente se usa "px" para el gap)
 
+/* ORDER */
+La propiedad "order" es una propiedad de Flexbox que permite especificar el orden de
+visualización de los elementos dentro de un contenedor, independientemente del
+orden en que aparecen en el código HTML.
+
+/* FLEX-GROW */
+La propiedad flex-grow es una propiedad de Flexbox que se utiliza para especificar cómo
+se distribuyen los espacios disponibles entre los elementos flexibles dentro de un
+contenedor. Esta propiedad controla la capacidad de un elemento para crecer en
+relación con otros elementos flexibles dentro del mismo contenedor.
+ por ej:
+hijo 1{
+flex-grow: 2
+} 
+esto significa que el hijo 1 va a ser 2 veces mas grande que los otros hijos
+
+/* FLEX-SHRINK */
+La propiedad flex-shrink se utiliza en flexbox para definir cómo se deben encoger los
+elementos flexibles en un contenedor flexible si no hay suficiente espacio disponible.
+La propiedad acepta un valor numérico que representa el factor de encogimiento de un
+elemento. Por ejemplo, si el factor de encogimiento de un elemento es 2 y el de otro es 1,
+el primer elemento se encogerá el doble que el segundo si es necesario.
