@@ -14,7 +14,7 @@ tipo de selector {
 -pseudo-elementos
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-/* ELECTORES */
+/* SELECTORES */
 -selector universal:selecciona todo el html --- * (asterisco){}
 -selector por tipo: se selecciona por elemento (por ejemplo button,h1,p,etc) --- h1{}
 -selector por clases: se agrupan los elementos en clases (poner class= "el nombre de la clase"al lado del elemento)-- . (punto) nombre de la clase{}
