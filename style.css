@@ -121,3 +121,9 @@ elementos flexibles en un contenedor flexible si no hay suficiente espacio dispo
 La propiedad acepta un valor numérico que representa el factor de encogimiento de un
 elemento. Por ejemplo, si el factor de encogimiento de un elemento es 2 y el de otro es 1,
 el primer elemento se encogerá el doble que el segundo si es necesario.
+
+/* FLEX-BASIS */
+Es una propiedad de Flexbox que establece el tamaño base de un elemento flexible
+antes de que se distribuya el espacio sobrante entre los elementos. Es similar a la
+propiedad width o height, ya que define el tamaño inicial del elemento.
+Generalmente se usa el valor de medida px
