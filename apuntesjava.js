@@ -1049,5 +1049,77 @@ Aquí podemos ver como mediante el uso del método setAttribute le estamos pasan
 como primer parámetro el atributo a setear y como segundo parámetro cuál será el
 valor de dicho atributo.
 
+// JSON
+JavaScript Object Notation (JSON) es un formato de intercambio de datos basado en
+texto que se utiliza para transmitir datos estructurados entre un servidor y una
+aplicación web.modernas. Se utiliza para enviar y recibir
+datos desde y hacia un servidor, y es compatible con la mayoría de los lenguajes de
+programación y plataformas.
+
+JSON.parse(): convierte una cadena de texto que contiene datos en formato JSON y devuelve un objeto JavaScript
+que representa estos datos.El formato JSON es similar a la notación literal de objetos JavaScript,
+lo que hace que la conversión sea muy fácil y útil en aplicaciones web.
+
+Por ejemplo, si tenemos la siguiente cadena de texto en formato JSON:
+let jsonString = '{"name":"Jose", "age":30, "city":"Mar del Plata"}';
+
+Podemos convertirlo en un objeto JavaScript utilizando JSON.parse() de la siguiente
+manera:
+let obj = JSON.parse(jsonString);
+
+Ahora, obj es un objeto JavaScript que contiene los datos del objeto JSON original:
+console.log(obj.name); // imprime: Jose
+console.log(obj.age); // imprime: 30
+console.log(obj.city); // imprime: Mar del Plata
+
+JSON.stringify(): JSON.stringify() es un método de JavaScript que convierte un objeto JavaScript en una
+cadena de texto en formato JSON (JavaScript Object Notation). Esta cadena de texto
+JSON puede ser enviada a un servidor, almacenada en una base de datos, o utilizada para
+enviar información estructurada a través de la red.
+El método JSON.stringify() toma como argumento un objeto de JavaScript y devuelve
+una cadena de texto JSON. Si el objeto no puede ser convertido a JSON, se lanzará una
+excepción.
+
+Supongamos que tenemos un objeto persona con las siguientes propiedades:
+const persona = {
+    nombre: 'Jose',
+    edad: 30,
+    ciudad: 'Mar del Plata',
+};
+
+Para convertir este objeto a una cadena JSON, podemos utilizar el método JSON.stringify()
+de la siguiente manera:
+
+const personaJSON = JSON.stringify(persona);
+console.log(personaJSON); // imprime: '{"nombre":"Jose", "edad":30, "ciudad":"Mar del Plata"}'
+
+// OBJETO STORAGE
+El objeto storage en JavaScript se refiere a la interfaz que proporciona una forma de
+almacenar y acceder a los datos en la memoria del navegador. Es una característica del
+objeto global window, que tiene dos implementaciones: sessionStorage y localStorage.
+
+-localStorage: es un objeto del navegador web que permite a los desarrolladores web
+almacenar datos localmente en la máquina del usuario de manera persistente. La
+información almacenada en localStorage permanece disponible incluso después de que
+se cierra y se vuelve a abrir el navegador.
+El objeto localStorage es una instancia de la interfaz Storage, que proporciona un
+conjunto de métodos para almacenar, recuperar y eliminar datos. Los datos almacenados
+en localStorage se pueden acceder mediante una clave única y se almacenan como una
+cadena de texto.
+
+-sessionStorage: es un objeto en JavaScript que permite almacenar datos en el
+navegador web de forma similar al localStorage, pero la diferencia principal es que los
+datos almacenados en el sessionStorage sólo están disponibles durante la sesión actual
+del usuario en el navegador, y se borran automáticamente cuando se cierra la
+pestaña o el navegador.
+Al igual que el localStorage, el sessionStorage también usa la interfaz de almacenamiento
+de clave-valor y proporciona los mismos métodos para almacenar, obtener y eliminar
+datos.
 
 
+//METODOS DE STORAGE
+-.setitem: que permite guardar elementos en el localStorage para transformar nuestro objeto en una cadena de
+texto JSON que se pueda guardar correctamente en el mismo.
+-.getitem: nos sirve para traernos
+elementos desde el localStorage, para convertir la cadena de texto JSON en un objeto nuevamente.
+-.removeitem: borrar el elemento del localStorage.
